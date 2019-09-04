@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div id="first-number">
+        6
+    </div>
+    <div id="second-number">
+        7
+    </div>
+    <div id="sum">
+
+        <h2> Change background colour!</h2>
+        <p>Mouse over the squares!</p>
+
+        <table style="width:300px; height:300px;">
+            <tr>
+                <td onmouseover="bgChange(this.style.backgroundColor)" onmouseout="bgChange('transparent')"
+                    style="background-color:rgb(240, 93, 117)">
+                </td>
+                <td onmouseover="bgChange (this.style.backgroundColor)" onmouseout="bgChange('transparent')"
+                    style="background-color:turquoise">
+                </td>
+                <td onmouseover="bgChange(this.style.backgroundColor)" onmouseout="bgChange('transparent')"
+                    style="background-color:red">
+                </td>
+            
+            
+            </tr>
+
+        </table>
+
+        <p id="pl">
+                This text is going to vanish
+            </p>
+            <input type="button" value="Vanish"
+            onclick="document.getElementById('pl').style.visibility='hidden'">
+
+            <input type="button" value="Appear"
+            onclick="document.getElementById('pl').style.visibility='visible'">
+
+    </div>
+    <script src="script.js">
+    </script>
+
+
+    <button type="button" onclick="sumTwoNums()"> sum </button>
+</body>
+
+</html>
